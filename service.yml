@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dz3-service
+spec:
+  selector:
+    app: dz3-app
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: web
+  type: NodePort
